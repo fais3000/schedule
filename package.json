@@ -23,15 +23,16 @@
     }
   },
   "dependencies": {
-    "later": ">=1.1.2"
+    "later": "^1.2.0",
+    "react-big-calendar": "^0.33.2"
   },
   "devDependencies": {
-    "smash": "~0.0.8",
+    "benchmark": "*",
+    "jslint": "*",
     "mocha": "*",
     "should": ">=0.6.3",
-    "jslint": "*",
-    "uglify-js": "*",
-    "benchmark": "*"
+    "smash": "~0.0.8",
+    "uglify-js": "*"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha test/**/*-test.js"
