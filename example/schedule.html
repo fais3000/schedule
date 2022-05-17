@@ -2,8 +2,7 @@
 <html>
 <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.css' rel='stylesheet' />
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.6.0/main.min.js'></script>
-
-
+<link href='https://cdnjs.cloudflare.com/ajax/libs/typebase.css/0.5.1/typebase.min.css' rel='stylesheet' />
 
 <style type="text/css">
   h1 {
@@ -37,6 +36,15 @@
 
 <body>
   <h1>Schedule Results:</h1>
+  <p>This is a very simple proof of concept of a schedular program for events scheduling. <br> This program takes three
+    inputes and generates a flexible schedule for you.</p>
+  <ul>
+    <li>Start date of the events (In the example below its 30th may 2022) </li>
+    <li>List of Resources (In the example below it is Auditoriums) </li>
+    <li>List of reservations or events with the amount of time they need. (In the example below these are movies) </li>
+  </ul>
+  <p> <a href="#calendar">Click here to scroll to the Calendar View</a>
+  </p>
 </body>
 
 <script src="../node_modules/later/later.js" type="text/javascript"></script>
@@ -257,7 +265,7 @@
 
   document.write('<div class="raw-result">');
 
-    document.write('<h1>Rules</h1>');
+  document.write('<h1>Rules</h1>');
   auditoriums.forEach(function (auditorium) {
     document.write('<p><b>Auditorium:</b> ' + auditorium.name + ' (Availability: ' + auditorium.availability + ') </p>');
   });
